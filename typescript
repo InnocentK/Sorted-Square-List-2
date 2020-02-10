@@ -1,0 +1,21 @@
+Script started on 2018-03-12 14:39:29-0400
+[wambugu1@fedora1 proj2]make
+g++ -gstabs+ -c Int341.cpp
+g++ -gstabs+ -c DNode.cpp
+g++ -gstabs+ -c INode.cpp
+g++ -gstabs+ -c SqList.cpp
+g++ -gstabs+ SqList.o INode.o DNode.o Int341.o p2comptest.cpp -o cTest.out
+g++ -gstabs+ SqList.o INode.o DNode.o Int341.o p2timetest1.cpp -o t1.out
+g++ -gstabs+ SqList.o INode.o DNode.o Int341.o p2timetest2.cpp -o t2.out
+g++ -gstabs+ SqList.o INode.o DNode.o Int341.o p2timetest3.cpp -o t3.out
+g++ -gstabs+ SqList.o INode.o DNode.o Int341.o driver.cpp -o proj2.out
+[wambugu1@fedora1 proj2]makeexittime ./t3.out[33G2.out[33G1.out
+1.368u 0.000s 0:01.37 99.2%	0+0k 0+0io 0pf+0w
+[wambugu1@fedora1 proj2]time ./t1.out[25Gmake[Kexittime ./t3.out[33G2.out
+3.872u 0.002s 0:03.89 99.4%	0+0k 0+0io 0pf+0w
+[wambugu1@fedora1 proj2]time ./t2.out[33G1.out[25Gmake[Kexittime ./t3.out
+10.925u 0.006s 0:10.99 99.3%	0+0k 0+0io 0pf+0w
+[wambugu1@fedora1 proj2]exit
+exit
+
+Script done on 2018-03-12 14:40:03-0400
